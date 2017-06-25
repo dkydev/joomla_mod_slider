@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5" client="site" method="upgrade">
+	<name>MOD_SLIDER</name>
+	<creationDate>06/25/2017</creationDate>
+	<author>Nick Robson</author>
+	<authorEmail>nick@dkydev.com</authorEmail>
+	<authorUrl>dkydev.com</authorUrl>
+	<copyright></copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>MOD_SLIDER_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_slider">mod_slider.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>mod_slider.xml</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="catid"
+					type="category"
+					label="MOD_SLIDER_CATEGORY_LABEL"
+					description="MOD_SLIDER_CATEGORY_DESCRIPTION"
+					extension="com_content"
+					published="1"
+					multiple="1"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
